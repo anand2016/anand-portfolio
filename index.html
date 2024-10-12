@@ -10,18 +10,21 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 20px;
             text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav {
             margin: 0;
             padding: 0;
             text-align: center;
             background-color: #333;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav a {
             padding: 14px 20px;
@@ -33,11 +36,33 @@
             background-color: #575757;
         }
         .content {
-            padding: 20px;
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
         }
-        .about, .work-experience, .education, .skills, .projects, .contact {
-            margin: 20px 0;
-            padding-top: 50px; /* To ensure visibility when scrolled */
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .profile-section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-details {
+            font-size: 18px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
         }
         footer {
             text-align: center;
@@ -53,7 +78,7 @@
 <body>
 
 <header>
-    <h1>Welcome to Anand Kumar's Portfolio</h1>
+    <h1>Anand Kumar - Design Verification Engineer</h1>
 </header>
 
 <nav>
@@ -66,12 +91,23 @@
 </nav>
 
 <div class="content">
-    <section id="about" class="about">
+    <section class="profile-section">
+        <img src="profile.jpg" alt="Anand Kumar's Photo">
+        <div class="profile-details">
+            <p><strong>Anand Kumar</strong></p>
+            <p>Design Verification Engineer</p>
+            <p>Phone: <strong>8810330530</strong></p>
+            <p>Email: <strong>anand3017@gmail.com</strong></p>
+            <p><a href="https://www.linkedin.com/in/anand-kumar-876b6679/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+    </section>
+
+    <section id="about">
         <h2>About Me</h2>
         <p>Hello! I am Anand Kumar, a professional Design Verification Engineer with expertise in SystemVerilog, UVM, and Digital Electronics. I have worked with Micron Technology and AMD, Hyderabad, specializing in RTL design, functional verification, and more.</p>
     </section>
 
-    <section id="work-experience" class="work-experience">
+    <section id="work-experience">
         <h2>Work Experience</h2>
         <ul>
             <li><strong>Micron Technology, Hyderabad (Jul 2024 - Present):</strong> Design Verification Engineer (Contract)</li>
@@ -83,7 +119,7 @@
         </ul>
     </section>
 
-    <section id="education" class="education">
+    <section id="education">
         <h2>Education</h2>
         <ul>
             <li><strong>MNNIT Allahabad (2021-2023):</strong> Master of Technology in Microelectronics and VLSI Design, GPA: 7.7/10</li>
@@ -91,7 +127,7 @@
         </ul>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills">
         <h2>Technical Skills</h2>
         <ul>
             <li>Programming Languages: Verilog, SystemVerilog, UVM, C, C++, Python, Tcl</li>
@@ -99,7 +135,7 @@
         </ul>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects">
         <h2>Academic Projects</h2>
         <ul>
             <li>Synchronous and Asynchronous FIFO Design in Verilog</li>
@@ -110,15 +146,16 @@
         </ul>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: anand3017@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/anand-kumar-876b6679/" target="_blank">Anand Kumar</a></p>
+        <p><strong>Phone:</strong> 8810330530</p>
+        <p><strong>Email:</strong> anand3017@gmail.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anand-kumar-876b6679/" target="_blank">Anand Kumar</a></p>
     </section>
 </div>
 
 <footer>
-    <p>Contact: anand3017@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/anand-kumar-876b6679/" target="_blank">Anand Kumar</a></p>
+    <p>Contact: anand3017@gmail.com | Phone: 8810330530 | <a href="https://www.linkedin.com/in/anand-kumar-876b6679/" target="_blank">LinkedIn Profile</a></p>
 </footer>
 
 </body>
